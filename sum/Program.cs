@@ -31,10 +31,11 @@ namespace sum
                         
                         switch (op)
                         {
-                            case 1: 
+                            case 1:
+                            case 2: 
                               arr=  GetArray();
                                 break;
-                            case 2:
+                            case 3:
                                 
                                 GetDoubleValues(out a,out b);
                                 break;
@@ -67,14 +68,14 @@ namespace sum
                     }
                
                
-                case 2:
+                case 3:
                     {
                        arr= GetArray();
                         result = Calic.multiplication(arr);
                         break;
                     }
 
-                case 3:
+                case 4:
                     {
                         GetDoubleValues(out a, out b);
                          try
@@ -109,7 +110,7 @@ namespace sum
                 arr[i] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             }
-            return arr;
+            return  arr;
         }
         public static void GetDoubleValues(out double a,out double b)
         {
